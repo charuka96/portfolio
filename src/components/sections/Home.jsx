@@ -1,4 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import  resume from "../../assets/resume.pdf";
 
 export const Home = () => {
   return (
@@ -9,7 +10,7 @@ export const Home = () => {
       <RevealOnScroll>
         <div className="text-center z-10 px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right">
-            Hi, I'm Pedro Tech
+            Hi, I’m  Thisaru Charuka
           </h1>
 
           <p className="tex-gray-400 text-lg mb-8 max-w-lg mx-auto">
@@ -19,10 +20,11 @@ export const Home = () => {
           </p>
           <div className="flex justify-center space-x-4">
             <a
-              href="#projects"
+              href={resume}
+              download
               className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]"
             >
-              View Projects
+              Resume
             </a>
 
             <a
